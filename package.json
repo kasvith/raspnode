@@ -1,0 +1,27 @@
+{
+  "name": "raspnode",
+  "version": "1.0.0",
+  "description": "A simple nodejs server for raspberry pi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasvith/raspnode.git"
+  },
+  "keywords": [
+    "pi",
+    "raspberry"
+  ],
+  "author": "Kasun Vithanage",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kasvith/raspnode/issues"
+  },
+  "homepage": "https://github.com/kasvith/raspnode#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
