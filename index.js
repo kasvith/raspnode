@@ -1,16 +1,9 @@
 const express = require('express')
 const app = express()
-const { exec } = require('child_process');
+const os = require('os')
 
 app.get("/", (req, res) => {
-    exec.call("uname -a", (err, stdout, stderr) => {
-        if (error) {
-            console.error(`exec error: ${error}`);
-            return res.send(err);
-          }
-          
-        return res.send(stdout);
-    })
+    return res.send(os.release())
 })
 
 app.listen(3000, () => {
